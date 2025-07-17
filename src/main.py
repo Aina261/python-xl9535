@@ -6,10 +6,12 @@ from typing import Optional
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+
 class XL9535:
     """
     A class to control the XL9535 I2C GPIO expander.
     """
+
     INPUT_PORT_0 = 0x00
     INPUT_PORT_1 = 0x01
     OUTPUT_PORT_0 = 0x02
@@ -96,6 +98,7 @@ class XL9535:
             return None
         relay_state = (current_state >> relay_num) & 1
         return relay_state
+
 
 # Example usage (move to a separate script for real use)
 """

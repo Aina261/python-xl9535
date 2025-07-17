@@ -2,9 +2,10 @@ import unittest
 from unittest.mock import patch
 from src.main import XL9535
 
+
 class TestXL9535(unittest.TestCase):
     def setUp(self):
-        patcher = patch('smbus2.SMBus')
+        patcher = patch("smbus2.SMBus")
         self.addCleanup(patcher.stop)
         self.MockSMBus = patcher.start()
         self.mock_bus = self.MockSMBus.return_value
@@ -58,5 +59,6 @@ class TestXL9535(unittest.TestCase):
         state = self.xl9535.get_relay_state(0, 0)
         self.assertIsNone(state)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

@@ -13,7 +13,7 @@ A Python library for controlling the XL9535 I2C GPIO expander. This library prov
 - Includes unit tests with mocking for I2C
 
 ## Requirements
-- Python 3.6+
+- Python 3.7+
 - [smbus2](https://pypi.org/project/smbus2/)
 - Linux-based system with I2C support (e.g., Raspberry Pi)
 
