@@ -1,7 +1,6 @@
 # XL9535
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
-[![Build Status](https://github.com/Aina261/XL9535/actions/workflows/ci.yml/badge.svg)](https://github.com/Aina261/XL9535/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 
 A Python library for controlling the XL9535 I2C GPIO expander. This library provides an easy-to-use interface for managing relays or GPIOs via the XL9535 chip over I2C, suitable for Raspberry Pi and other Linux-based systems.
 
